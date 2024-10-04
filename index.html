@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Innovaciones Tecnológicas</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .info-section {
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .imagen-centrada {
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    button {
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #ff4500;
+    }
+
+    .video {
+        display: block;
+        margin: 20px auto;
+    }
+  </style>
+  <script>
+    function toggleInfo(id) {
+        const info = document.getElementById(id);
+        if (info.style.display === "none" || info.style.display === "") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+  </script>
+</head>
+<body>
+    <header>
+        <h1>Innovaciones Tecnológicas</h1>
+        <p>Hecho por Ignacio Medina Mazariegos</p>
+    </header>
+
+    <nav>
+        <a href="#artificial-intelligence">Inteligencia Artificial</a>
+        <a href="#quantum-computing">Computación Cuántica</a>
+        <a href="#blockchain">Blockchain</a>
+        <a href="#tech-events">Eventos Tecnológicos</a>
+        <a href="#ia-section">Nueva Sección: Inteligencia Artificial</a>
+    </nav>
+
+    <main>
+        <!-- Sección de Inteligencia Artificial original -->
+        <section id="artificial-intelligence" class="info-section">
+            <h2>Inteligencia Artificial</h2>
+            <img src="https://img.computing.es/wp-content/uploads/2024/01/19110432/Inteligencia-Artificial.jpg" alt="Descripción de la imagen" width="300" height="200" class="imagen-centrada">
+            <button onclick="toggleInfo('info-artificial-intelligence')">Leer más</button>
+            <p id="info-artificial-intelligence">
+              La inteligencia artificial (IA) está revolucionando la forma en que interactuamos con la tecnología. Desde asistentes virtuales hasta algoritmos de aprendizaje automático, la IA tiene el potencial de transformar industrias enteras, mejorando la eficiencia y creando nuevas oportunidades.
+            </p>
+        </section>
+
+        <!-- Sección de Computación Cuántica -->
+        <section id="quantum-computing" class="info-section">
+            <h2>Computación Cuántica</h2>
+            <img src="data:image/jpeg;base64,..." alt="Descripción de la imagen" width="300" height="200" class="imagen-centrada">
+            <button onclick="toggleInfo('info-quantum-computing')">Leer más</button>
+            <p id="info-quantum-computing">La computación cuántica promete revolucionar el procesamiento de datos mediante el uso de principios de la mecánica cuántica. Con la capacidad de realizar cálculos a una velocidad sin precedentes, esta tecnología tiene el potencial de resolver problemas complejos que son inalcanzables para las computadoras tradicionales.</p>
+        </section>
+
+        <!-- Sección de Blockchain -->
+        <section id="blockchain" class="info-section">
+            <h2>Blockchain</h2>
+            <img src="data:image/jpeg;base64,..." alt="Descripción de la imagen" width="300" height="200" class="imagen-centrada">
+            <button onclick="toggleInfo('info-blockchain')">Leer más</button>
+            <p id="info-blockchain">La tecnología blockchain permite transacciones seguras y descentralizadas mediante la creación de un registro inmutable de eventos. Se utiliza en criptomonedas y otras aplicaciones donde la transparencia y la seguridad son primordiales.</p>
+        </section>
+
+        <!-- Nueva Sección: Definición y comienzo de la Inteligencia Artificial -->
+        <section id="ia-section" class="info-section">
+            <h2>Definición de Inteligencia Artificial</h2>
+            <img src="https://bigprofiles.com/wp-content/uploads/2024/02/image-13.png" alt="Imagen Definición IA 1" width="300" height="200" class="imagen-centrada">
+            <img src="https://www.repsol.com/content/dam/repsol-corporate/es/energia-e-innovacion/inteligencia-artificial-IA.jpg.transform/rp-rendition-md/image.jpg" alt="Imagen Definición IA 2" width="300" height="200" class="imagen-centrada">
+            <p>La inteligencia artificial (IA) es la simulación de procesos de inteligencia humana por parte de máquinas, especialmente sistemas informáticos. Estas simulaciones incluyen el aprendizaje, el razonamiento y la autocorrección.</p>
+
+            <h2>Comienzo de la Inteligencia Artificial</h2>
+            <img src="https://i.blogs.es/cfd337/ia2/450_1000.png" alt="Comienzo IA 1" width="300" height="200" class="imagen-centrada">
+            <img src="https://pontia.tech/wp-content/uploads/2023/06/imagen-blog-ia-pontia-1.jpg" alt="Comienzo IA 2" width="300" height="200" class="imagen-centrada">
+            <img src="https://www.acweb.cl/wp-content/uploads/2023/05/inteligencia-artificial-ayudando-humanos.jpg" alt="Comienzo IA 3" width="300" height="200" class="imagen-centrada">
+            <p>La historia de la inteligencia artificial comienza en la década de 1950, cuando los científicos comenzaron a desarrollar teorías sobre cómo las máquinas podrían simular el pensamiento humano. Desde entonces, la IA ha avanzado de manera exponencial, abarcando múltiples áreas como el procesamiento del lenguaje natural, la visión por computadora y el aprendizaje automático.</p>
+
+            <h2>Videos sobre Inteligencia Artificial</h2>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8lMIdrlIWOQ" title="Video IA 1" frameborder="0" allowfullscreen></iframe>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/_tA5cinv0U8" title="Video IA 2" frameborder="0" allowfullscreen></iframe>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/xnvocqg1J5o" title="Video IA 3" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+</body>
+</html>
